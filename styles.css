@@ -1,0 +1,153 @@
+:root {
+    --h2-font-size: 3rem;
+    --black: #000;
+  
+  }
+  
+  *,
+  ::before,
+  ::after {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+  }
+  
+  #header {
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(80,80,80);
+    z-index: 1;
+  
+  }
+  
+  #header ul {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+  }
+  
+  #header li {
+    list-style: none;
+  }
+  
+  #header a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  
+  
+  #welcome-section {
+    height: 100vh;
+    text-align: center;
+    background-image: url("https://wallpapercave.com/wp/wp7287248.jpg");
+    background-position: center;
+    background-size: cover;
+   
+  }
+  
+  .welcome-div {
+    position: relative;
+    top: 130px;
+  }
+  
+  #welcome-section h1 {
+    font-size: 5rem;
+    color: var(--black);
+    
+  }
+  
+  #welcome-section h2 {
+    font-size: 3rem;
+    padding-top: 20px;
+  }
+  
+  #projects {
+    background-color: rgb(80,80,80);
+    height: 100vh;
+  }
+  
+  #projects h2 {
+    text-align: center;
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    padding-top: 30px;
+  }
+  
+  #project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 40px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  
+  .project {
+    border: 5px solid black;
+  }
+  
+  .project-image {
+  
+  }
+  
+  .project-name {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+  }
+  
+  .project-link {
+    text-decoration: none;
+  }
+  
+  #contact-links {
+    background-image: url("https://wallpapercave.com/wp/wp7287248.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  #contact-links h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 30px;
+  }
+  
+  .contacts-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .contact a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    display: flex;
+    column-gap: 20px;
+  }
+  
+  @media (max-width: 800px) {
+    #header {
+      background-color: white;
+    }
+  
+    #projects {
+      height: 250vh;
+    }
+  }
